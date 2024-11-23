@@ -11,7 +11,7 @@ function ProductCard({ product, onClick, addToCart }) {
     <div onClick={onClick} className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg cursor-pointer flex flex-col justify-between p-3">
       <img src={product.image} alt={product.title} className="w-full h-48 my-4 object-contain" />
       <div className="flex flex-col flex-grow justify-between">
-        <h3 className="font-semibold text-lg mb-2 text-gray-800">{truncateTitle(product.title, 25)}</h3>
+        <h3 className="font-semibold text-lg mb-2 text-gray-800">{truncateTitle(product.title, 23)}</h3>
         <div className="flex flex-col justify-between mt-auto">
           <p className="text-xl font-bold text-blue-600">${product.price.toFixed(2)}</p>
           <button
